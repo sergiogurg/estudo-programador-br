@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo HTML Intermediário</title>
+    <style>
+
+        body{
+            background-color: rgb(22, 22, 22);
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <form action="get">
+
+        <!-- tag <SELECT>
+
+            É uma caixa clicável, que exibe as opções das tags <option> 
+
+                Obs. 1: atributo MULTIPLE -> permite marcar mais de uma opção.
+
+                Obs. 2: atributo SIZE="" -> em combinação com MULTIPLE, limita o tamanho da exibição em certo número e adiciona um scroll
+        -->
+
+        <!-- tag <OPTION>
+        Obs. 3: Por padrão (default), exibe-se a primeira opção. Porém, é possível forçar exibir outra com o atributo SELECTED
+        -->
+
+        <!-- <select name="estado" multiple size="5"> -->
+        <select name="estado">
+            <option value="BA">Bahia</option>
+            <option value="PA">Pará</option>
+            <option value="CE" selected>Ceará</option>
+            <option value="PB">Paraíba</option>
+            <option value="MA">Maranhão</option>
+            <option value="SE">Sergipe</option>
+            <option value="PI">Piauí</option>
+            <option value="PE">Pernambuco</option>
+
+
+
+        </select>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+
+</html>
