@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo HTML Intermediário</title>
+    <style>
+        
+        body{
+            background-color: rgb(20, 20, 20);
+            color: white;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Atributo ACTION
+        URL onde vai ocorrer a requisição de busca.
+        
+        default: a própria página atual
+
+    -->
+
+    <form action="" method="get">
+
+        <p>Nome:</p>
+        <input type="text" name="nome">
+        
+        <p>Email:</p>
+        <input type="email" name="email">
+
+        <p>Gênero:</p>
+        <!-- 
+            type="radio" = bolinha de marcar somente uma ÚNICA opção (opções mutuamente exclusivas)
+            Obs. 1: Os atributos "name" dos inputs radio DEVEM ser IGUAIS, para que as opções permaneçam mutuamente exclusivas. 
+            Obs. 2: Atributo "checked" indica a opção inicialmente marcada (default)
+        -->
+        <input checked type="radio" name="gender" value="fem">Feminino
+        <input type="radio" name="gender" value="masc">Masculino
+        <input type="radio" name="gender" value="nb">Não-binárie
+        <input type="radio" name="gender" value="other">Outros
+
+        <p>Em quais cursos você deseja se inscrever?</p>
+        <!-- 
+            type="checkbox" = quadradinho de marcar VÁRIAS opções
+         -->
+        <input type="checkbox" name="curso" value="opcao1">React JS
+        <input type="checkbox" name="curso" value="opcao2">React Native
+
+
+        <br><br>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+
+
+    </form>
+
+</body>
+
+</html>
