@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo HTML Intermediário</title>
+</head>
+
+<body>
+    
+    <h1>Busca no Youtube</h1>
+    
+    <p>Entre com o termo que você procura, e você será direcionado ao site do Youtube com os resultados da busca!</p>
+
+    <!-- Tag <form> -->
+
+    <!--Tag <input> (caixa de texto) 
+        
+        method: GET e POST
+        GET -> o texto enviado vai APARECER na URL
+        POST -> o texto enviado NÃO vai APARECER na URL (recomendado para inputs do tipo senha [type="password"] ) 
+
+    -->
+
+    <form action="https://www.youtube.com/results" method="get">
+        <input type="text" name="search_query">
+        <input type="submit" value="Procurar no YouTube">
+    </form>
+
+</body>
+
+</html>
