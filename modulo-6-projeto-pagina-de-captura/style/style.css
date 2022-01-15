@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    max-width: 75%;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(50, 189, 235);
+    text-transform: uppercase;
+}
+
+h1{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+
+    padding: 10px;
+    margin: 0px;
+}
+
+main{
+    padding: 20px;
+    background-image: url('../images/people.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+#inscricao{
+    background-color: rgba(211, 211, 211, 0.534);
+
+    width: 230px;
+    float: right;
+    padding: 20px;
+}
+
+#inscricao > h2{
+    font-size: 18px;
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+}
+
+#inscricao > p{
+    margin-bottom: 15px;
+}
+
+input, select{
+    width: 100%;
+
+    /* Propriedade BOX-SIZING: altera o comportamento das propriedades WIDTH e HEIGHT. 
+
+        BORDER-BOX: o tamanho (width + height) do elemento já INCLUI as medidas de PADDING e BORDER.
+
+        CONTENT-BOX: o tamanho NÃO INCLUI PADDING e BORDER.
+
+    */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+}
+
+select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+    
+}
+
+input#botao{
+    background-color: rgb(50, 189, 235);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input#botao:hover{
+    background-color: rgb(14, 126, 163);
+    transition-duration: 0.25s;
+}
+
+input#botao:active{
+    background-color: darkblue;
+    color: rgb(50, 189, 235);
+}
+
+footer{
+    color: white;
+    background-color: rgb(37, 37, 37);
+    padding: 40px;
+    text-align: center;
+}
+
+#descricao{
+    width: 30%;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+#descricao > h2, #descricao > p{
+    margin-bottom: 15px;
+    text-align: left;
+}
