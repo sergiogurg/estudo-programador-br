@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.container {
+    height: 500px;
+    color: white;
+    padding: 10px;
+    background-color: lightpink;
+
+    display: grid;
+    /* grid-template-rows: 200px 100px;
+    grid-template-columns: 1fr 3fr 1fr; */
+    grid-template: auto auto / auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+
+    justify-items: center;
+    align-items: center;
+
+    justify-content: flex-start;
+    align-content: center;
+
+}
+
+.r1{
+    background-color: red;
+}
+
+.r2 {
+    background-color: green;
+}
+
+.r3 {
+    background-color: blue;
+}
+
+.rect {
+    height: 100px;
+    width: 100px;
+}
