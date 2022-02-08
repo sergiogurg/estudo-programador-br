@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* @keyframes changeColor {
+    0% {background-color: red;}
+
+    25% {background-color: green;
+        width: 400px;}
+
+    50% {background-color: yellow;}
+
+    100% {background-color: blue;
+          width: 200px;}
+} */
+
+@keyframes move {
+    0% {left: 0px;}
+    100% {left: 300px;}
+}
+
+.box {
+    position: relative;
+    height: 100px;
+    width: 200px;
+    border-style: solid;
+    
+    /* ANIMAÇÃO: */
+    animation-name: move;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+/* Velocidades:
+
+- Linear: velocidade normal do começo ao fim.
+- Ease: devagar no início, rápido no meio, devagar no final.
+- Ease-In: devagar no início, velocidade normal no meio e no final.
+- Ease-Out: velocidade normal no início e no meio, devagar no final.
+- Ease-In-Out: devagar no início, velocidade normal no meio, devagar no final.
+
+
+*/
+
+.div1 {
+    animation-timing-function: linear;
+}
+
+.div2 {
+    animation-timing-function: ease;
+}
+
+.div3 {
+    animation-timing-function: ease-in;
+}
+
+.div4 {
+    animation-timing-function: ease-out;
+}
+
+.div5 {
+    animation-timing-function: ease-in-out;
+}
