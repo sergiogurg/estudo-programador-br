@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@keyframes changeColor {
+    0% {background-color: red;}
+    25% {background-color: green;}
+    50% {background-color: yellow;}
+    100% {background-color: blue;}
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    
+    /* ANIMAÇÃO: */
+    animation-name: changeColor;
+    animation-duration: 6s;
+
+}
