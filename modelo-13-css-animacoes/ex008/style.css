@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.btn {
+    background-color: rgb(151, 164, 235);
+    color: white;
+    font-size: 30px;
+
+    display: inline-block;
+    padding: 20px;
+
+    /* Transições */
+    transition-property: background-color, padding;
+    transition-duration: 0.5s, 3s;
+    transition-delay: 200ms;
+    transition-timing-function: ease;
+
+    /* Shorthand: */
+    /* transition: background-color 0.5s, padding 3s; */
+}
+
+.btn:hover {
+    background-color: rgb(28, 86, 136);
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
