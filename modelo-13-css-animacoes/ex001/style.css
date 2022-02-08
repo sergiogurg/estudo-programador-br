@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@keyframes changeColor {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    
+    /* ANIMAÇÃO: */
+    animation-name: changeColor;
+    animation-duration: 5s;
+
+}
